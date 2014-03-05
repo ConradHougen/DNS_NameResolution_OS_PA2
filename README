@@ -1,0 +1,31 @@
+Conrad Hougen
+Programming Assignment 2
+CSCI 3753 Operating Systems
+Prof. Shivakant Mishra
+
+Before building the program:
+-If you would like to resolve multiple IP addresses per hostname,
+ open multi-lookup.c and uncomment the define at line 40: MULTI_IP
+-Otherwise, no changes need to be made
+
+To build:
+-Navigate to the directory where multi-lookup.c is located and
+ type "make" in the terminal to make all targets
+-"make clean" should remove all built objects
+
+To run:
+-See example:
+	./multi-lookup input/names1.txt input/names2.txt results.txt
+
+-The input files can be changed, so just type the path of each input
+ txt file after ./multi-lookup.  At the end, give a target output
+ txt file.  You must provide at least 1 input file and 1 output
+ file, and a maximum of 10 input name files.
+
+Extra Credit:
+1. When MULTI_IP is defined as a positive integer, the program should output up to MULTI_IP different ipv4 strings, separated by commas,
+after each hostname in the output file.
+
+2. The number of resolver threads should match the number of
+processor cores configured on the system.
+
